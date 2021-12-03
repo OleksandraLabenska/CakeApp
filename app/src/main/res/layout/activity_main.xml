@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#fde2e4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:text="CakeChallenge"
+        android:textColor="#de4eb2"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginVertical="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cake" />
+
+    <EditText
+        android:id="@+id/nameValue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="Name"
+        android:textColor="#674343"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/surnameValue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="Surname"
+        android:textColor="#674343"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ageValue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="Age"
+        android:textColor="#674343"
+
+        android:inputType="number"/>
+
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10sp"
+        android:checkedButton="@id/male"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Male"
+            android:textColor="#674343" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Female"
+            android:textColor="#674343" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checked"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Have you participated in another contest before or not?"
+        android:textColor="#674343" />
+
+    <EditText
+        android:id="@+id/nameContest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:hint="Name of the contest"
+        android:textColor="#674343"
+        android:text="None"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="casual"
+        android:paddingVertical="10dp"
+        android:text="Join to the Challenge!"
+        android:textStyle="bold" />
+
+</LinearLayout>
